@@ -1,0 +1,80 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(228, 204, 234);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative; 
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  .item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(228, 204, 234);;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  .item p {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  .container input {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .btn {
+    position: sticky;
+    background-color: #cbabe6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .btn:hover {
+    background-color: #2F0F40;
+    transform: scale(1.05);
+  }
+  .btn:active {
+    background-color: #A17BD6;
+    transform: scale(0.95);
+  }
+  .messages {
+    position: absolute;
+ /* Отступ от нижней части контейнера */
+    width: 100%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+  text-align: center;
+  }
+  
+  .error {
+    color: red;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .success {
+    color: green;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }

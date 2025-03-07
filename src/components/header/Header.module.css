@@ -1,0 +1,174 @@
+* .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+  height: 150px;
+  background-image: url("/assets/images/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  position: absolute;
+  top: 40px; 
+  left: 20px; 
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  right: 0.5%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items:center ;
+  gap: 5px;
+  z-index: 10;
+}
+
+.link,
+.linkActive,
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.link:hover,
+.logoutBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.linkActive {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: white;
+}
+
+
+.logoutBtn{
+  color: white;
+  text-decoration: none;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 875px) {
+
+  .background {
+    height: 100px;
+  }
+
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav {
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    top: 10px; 
+    left: 10px; 
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      top: 8px; 
+      left: 8px;
+    }
+  }
+    .logo img {
+      height: 40px;
+      width: 40px;
+    }
+
+  .nav {
+    top: 10px;
+    right: 5px;
+    gap: 8px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
